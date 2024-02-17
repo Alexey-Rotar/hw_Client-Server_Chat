@@ -11,7 +11,7 @@ public class ClientProgram {
         String name = scanner.nextLine();
 
         InetAddress address = InetAddress.getLocalHost();
-        Socket socket = new Socket(address, 51000);
+        Socket socket = new Socket(address, 5100);
         Client client = new Client(socket, name);
 
         InetAddress inetAddress = socket.getInetAddress();
